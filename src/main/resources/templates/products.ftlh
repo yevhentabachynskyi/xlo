@@ -4,7 +4,11 @@
     <title>XLO</title>
 </head>
 <body>
-<h1>XLO</h1><hr>
+<h1>XLO | <a href="/login">Вхід</a></h1><hr>
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <input type="submit" value="Вихід"/>
+</form>
 <h4>Знайдеться не все</h4>
 <form action="/" method="get">
     Пошук по назві оголошення: <input type="text" name="title"><br>
