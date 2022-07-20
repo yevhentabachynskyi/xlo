@@ -13,11 +13,11 @@
 <b>Опис товару: </b>${product.description}<br>
 <b>Ціна: </b>${product.price}<br>
 <b>Місто: </b>${product.city}<br>
-<b>Автор: </b>${product.author}<br>
+<b>Автор: </b><a href="/user/${product.user.id}">${product.user.name}</a><br>
 <hr>
-<h3>Додати новий товар</h3>
-<form action="/product/delete/${product.id}" method="post">
-    <input type="submit" value="Видалити товар">
-</form>
+<#--<h3>Видалити товар</h3>-->
+<#--<form action="/product/delete/${product.id}" method="post">-->
+<#--    <input type="submit" value="Видалити товар">-->
+<#--</form>-->
 </body>
 </html>
